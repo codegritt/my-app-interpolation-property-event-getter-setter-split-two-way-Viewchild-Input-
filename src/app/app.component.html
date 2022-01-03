@@ -45,3 +45,25 @@
 <p>Welcome {{customerName}}</p>
 
 </div>
+
+<hr>
+
+<h2>@Viewchild</h2>
+
+<div>
+<input #nameRef type="text" [(ngModel)]="name">
+<p>Welcome {{name}}</p>
+</div>
+
+
+<div>
+<input type="text" [(ngModel)]="userName" (ngModelChange)="greetgokul($event)">
+<p>Welcome {{userName}}</p>
+
+</div>
+
+<div>
+<input type="text" [(ngModel)]="customerName">
+<p>Welcome {{customerName}}</p>
+
+</div>
