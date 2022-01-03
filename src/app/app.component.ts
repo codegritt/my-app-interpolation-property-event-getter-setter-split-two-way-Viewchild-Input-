@@ -23,6 +23,7 @@ export class AppComponent implements AfterViewInit {
 
   ngAfterViewInit() {
       this,this.nameElementRef.nativeElement.focus();
+      console.log(this.nameElementRef);
   }
 
 
