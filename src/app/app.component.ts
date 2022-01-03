@@ -11,4 +11,10 @@ export class AppComponent {
   pageTitle="gokul learns angular";
   imgUrl='https://upload.wikimedia.org/wikipedia/en/5/5d/Wolverine_%28James_%27Logan%27_Howlett%29.png';
 
+
+  count=0;
+  incrementCount(){
+    this.count +=1;
+
+  }
 }
