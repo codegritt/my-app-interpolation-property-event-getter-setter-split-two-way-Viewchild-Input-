@@ -23,4 +23,13 @@ export class AppComponent {
     this.count +=1;
 
   }
+
+  greetgokul(updatedValue: string) {
+    this.userName = updatedValue;
+    if (updatedValue == 'gokul') {
+      alert('Welcome gokul');
+    }
+  }
+
+
 }
