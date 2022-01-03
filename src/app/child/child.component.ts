@@ -9,7 +9,7 @@ export class ChildComponent implements OnInit {
 
 
   @Input()
-  loggedIn: boolean = false;
+  loggedIn!: boolean;
 
 
   constructor() { }
