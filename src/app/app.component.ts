@@ -13,6 +13,8 @@ export class AppComponent implements AfterViewInit {
 
   imgUrl2='https://miro.medium.com/max/1155/1*C1kgFbqTyVuckvJ3Z1lgeQ.png';
 
+  imgUrl3='https://i.stack.imgur.com/8W1fj.png';
+
 
   count=0;
   name!: string;
