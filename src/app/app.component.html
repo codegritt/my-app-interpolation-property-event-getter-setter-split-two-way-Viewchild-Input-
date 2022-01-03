@@ -38,4 +38,16 @@
 </div>
 
 
+<h2>Split Two way binding</h2>
+<div>
+<input type="text" [(ngModel)]="userName" (ngModelChange)="greetgokul($event)">
+<p>Welcome {{userName}}</p>
 
+</div>
+
+<h2>Getters setters</h2>
+<div>
+<input type="text" [(ngModel)]="userName" (ngModelChange)="customerName">
+<p>Welcome {{customerName}}</p>
+
+</div>
