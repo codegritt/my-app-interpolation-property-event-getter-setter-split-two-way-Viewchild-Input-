@@ -13,7 +13,7 @@ export class AppComponent {
 
 
   count=0;
-  name: string;
+  name!: string;
   
   incrementCount(){
     this.count +=1;
