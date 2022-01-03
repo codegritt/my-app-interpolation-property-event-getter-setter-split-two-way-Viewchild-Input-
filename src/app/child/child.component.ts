@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ChildComponent implements OnInit {
 
-loggedIn = true;
+loggedIn = false;
 
 
   constructor() { }
