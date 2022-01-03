@@ -8,9 +8,21 @@ import { Component, Input, OnInit } from '@angular/core';
 export class ChildComponent implements OnInit {
 
 
-  @Input()
-  loggedIn!: boolean;
+  private _loggedIn!: boolean;
+  message!: string;
 
+  get loggedIn():boolean{
+    return this._loggedIn;
+  }
+  @Input()
+  set loggedIn(value: boolean){
+    this._loggedIn=value;
+    if(value === true){
+      this.message='welcome back gokul';
+    }else {
+      this.message='please log in';
+    }
+  }
 
   constructor() { }
 
