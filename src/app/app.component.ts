@@ -1,11 +1,11 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements AfterViewInit {
 
 
   pageTitle="gokul learns angular";
@@ -18,6 +18,13 @@ export class AppComponent {
   name!: string;
   userName!: string;
   private _customerName!: string;
+  @ViewChild('nameRef')
+  nameElementRef!: ElementRef;
+
+  ngAfterViewInit() {
+      this,this.nameElementRef.nativeElement.focus();
+  }
+
 
   get customerName(): string{
     return this. _customerName;
